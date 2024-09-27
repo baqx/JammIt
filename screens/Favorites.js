@@ -1,25 +1,12 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import {
-  StyleSheet,
-  Text,
-  View,
-  Image,
-  TouchableOpacity,
-  ScrollView,
-  SafeAreaView,
-  ImageBackground,
-} from "react-native";
+import { StyleSheet, Text, View, ScrollView, SafeAreaView } from "react-native";
 import { Colors, GlobalStyles } from "../styles/styles";
-import { Feather, Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
-
-import Slider from "@react-native-community/slider";
 import { useNavigation } from "@react-navigation/native";
 import TrackListItem from "../components/TrackListItem";
 import AlbumCard from "../components/AlbumCard";
 
 export default function FavoritesScreen() {
-  const navigation = useNavigation();
   return (
     <SafeAreaView style={GlobalStyles.container}>
       <ScrollView style={styles.container}>

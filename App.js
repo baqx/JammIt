@@ -1,17 +1,6 @@
-import { StatusBar } from "expo-status-bar";
-import {
-  StyleSheet,
-  Text,
-  SafeAreaView,
-  View,
-  Image,
-  TouchableOpacity,
-} from "react-native";
-import { Colors, GlobalStyles } from "./styles/styles";
 import * as SplashScreen from "expo-splash-screen";
 import { useFonts } from "expo-font";
 import { useEffect } from "react";
-import LottieView from "lottie-react-native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
 import OnboardingScreen from "./screens/Onboarding";
@@ -20,6 +9,8 @@ import MainTabs from "./components/MainTabs";
 import PlayingScreen from "./screens/Playing";
 import ArtisteScreen from "./screens/Artiste";
 import FavoritesScreen from "./screens/Favorites";
+import SearchScreen from "./screens/SearchScreen";
+import ArtistesScreen from "./screens/Artistes";
 SplashScreen.preventAutoHideAsync();
 const Stack = createNativeStackNavigator();
 
@@ -71,6 +62,16 @@ export default function App() {
         <Stack.Screen
           name="FavoritesScreen"
           component={FavoritesScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="SearchScreen"
+          component={SearchScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="ArtistesScreen"
+          component={ArtistesScreen}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

@@ -5,7 +5,6 @@ import {
   SafeAreaView,
   View,
   Image,
-  TouchableOpacity,
   ScrollView,
 } from "react-native";
 import { Colors, GlobalStyles } from "../styles/styles";

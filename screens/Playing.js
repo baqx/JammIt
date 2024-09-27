@@ -11,7 +11,6 @@ import {
 } from "react-native";
 import { Colors, GlobalStyles } from "../styles/styles";
 import { Feather, Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
-
 import Slider from "@react-native-community/slider";
 import { useNavigation } from "@react-navigation/native";
 

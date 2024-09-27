@@ -4,16 +4,13 @@ import {
   StyleSheet,
   Text,
   View,
-  Image,
   TouchableOpacity,
   ScrollView,
   SafeAreaView,
   ImageBackground,
 } from "react-native";
 import { Colors, GlobalStyles } from "../styles/styles";
-import { Feather, Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
-
-import Slider from "@react-native-community/slider";
+import { Feather, Ionicons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 import TrackListItem from "../components/TrackListItem";
 import AlbumCard from "../components/AlbumCard";

@@ -14,8 +14,8 @@ export const Colors = {
   white: "#fff",
 
   // Neutral colors
-  background: "#2C2C2C",
-  cardBackground: "#ffffff",
+  background: "#1c1b1b",
+  cardBackground: "##343434",
   almostBg: "#2C2C2C",
   backBtnBg: "#252424",
 

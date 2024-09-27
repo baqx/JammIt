@@ -3,6 +3,8 @@ import HomeScreen from "../screens/Home";
 import { Colors } from "../styles/styles";
 import { Feather, Ionicons } from "@expo/vector-icons";
 import FavoritesScreen from "../screens/Favorites";
+import SearchScreen from "../screens/SearchScreen";
+import ArtistesScreen from "../screens/Artistes";
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -25,11 +27,11 @@ const MainTabs = () => {
       />
 
       <Tab.Screen
-        name="Explore"
-        component={HomeScreen}
+        name="Search"
+        component={SearchScreen}
         options={{
           tabBarIcon: ({ color }) => (
-            <Ionicons name="compass-outline" color={color} size={24} />
+            <Ionicons name="search-outline" color={color} size={24} />
           ),
         }}
       />
@@ -43,11 +45,11 @@ const MainTabs = () => {
         }}
       />
       <Tab.Screen
-        name="Me"
-        component={HomeScreen}
+        name="Artistes"
+        component={ArtistesScreen}
         options={{
           tabBarIcon: ({ color }) => (
-            <Ionicons name="person-outline" color={color} size={24} />
+            <Ionicons name="list-outline" color={color} size={24} />
           ),
         }}
       />
