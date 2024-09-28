@@ -11,6 +11,7 @@ import { Colors, GlobalStyles } from "../styles/styles";
 import { Ionicons } from "@expo/vector-icons";
 import TrackListItem from "../components/TrackListItem";
 import TrackCard from "../components/TrackCard";
+import FloatingTrack from "../components/FloatingTrack";
 
 export default function HomeScreen() {
   return (
@@ -128,7 +129,13 @@ export default function HomeScreen() {
           />
         </View>
       </ScrollView>
-
+      <FloatingTrack
+        name="Paradise Only Vocals"
+        artiste="Maher Zain"
+        duration="3:55"
+        status="play"
+        liked="unLiked"
+      />
       <StatusBar style="light" />
     </SafeAreaView>
   );

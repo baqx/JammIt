@@ -26,6 +26,7 @@ export default function SearchScreen() {
           onChangeText={onChangeSearchText}
           value={searchText}
           placeholder="Enter the name of an artiste, or a song"
+          cursorColor={Colors.primary}
         />
       </ScrollView>
       <StatusBar style="light" />

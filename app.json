@@ -12,13 +12,22 @@
       "backgroundColor": "#0D0C0C"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "This app requires access to your media library to play audio files.",
+        "NSMicrophoneUsageDescription": "This app requires access to your microphone to record audio.",
+        "NSCameraUsageDescription": "This app requires access to your camera for media capture."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#0D0C0C"
       },
+      "permissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_AUDIO"
+      ],
       "playback": {
         "experimentalUseExoPlayer": true
       }
@@ -37,6 +46,12 @@
             "./assets/fonts/Satoshi-Regular.otf",
             "./assets/fonts/Satoshi-Light.otf"
           ]
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone."
         }
       ]
     ]
